@@ -3,7 +3,6 @@
 
 **Version:** 2.0  
 **Stack:** PHP · MySQL · Bootstrap 5 · DataTables · TCPDF  
-**Server:** onlinereport.celtaclab.com  
 **Database:** `celreport`
 
 ---
@@ -39,7 +38,7 @@ Celtac Lab Report System is a web-based Lab Information System (LIS) for **บ�
 
 ## Database Structure
 
-**Database name:** `celreport`
+**Database name:** `xxxxxx`
 
 | Table | Purpose |
 |---|---|
