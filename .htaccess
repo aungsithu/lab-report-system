@@ -1,0 +1,21 @@
+# ✅ Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ✅ Redirect root access to login.php (if no index.php exists)
+DirectoryIndex login.php
+
+# ✅ Prevent access to .env, config, and sensitive files
+<FilesMatch "(\.env|\.git|config\.php|composer\.json|README\.md)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ✅ Prevent directory browsing
+Options -Indexes
+
+# ✅ Optional: Clean URLs later (uncomment if needed)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.+)$ login.php [QSA,L]

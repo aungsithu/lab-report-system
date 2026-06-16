@@ -1,0 +1,34 @@
+# Database credentials & config
+db.php
+config.php
+setup.php
+includes/config.php
+includes/db.php
+Config/
+
+# Database dumps — NEVER push
+*.sql
+
+# Error logs
+error_log
+*.log
+
+# Uploaded files (may have patient/user data)
+uploads/
+generated_quotes/
+generated_receipts/
+qrcodes/
+barcodes/
+labels/
+
+# Laravel specific (ctg point system)
+.env
+.env.*
+vendor/
+storage/logs/
+storage/framework/
+bootstrap/cache/
+
+# System files
+.DS_Store
+Thumbs.db
